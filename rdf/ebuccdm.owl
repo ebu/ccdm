@@ -3678,13 +3678,10 @@ o Représentation de la segmentation : Les TimelineTracks sont préférés aux h
 ###  http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Essence
 ec:Essence rdf:type owl:Class ;
            rdfs:subClassOf ec:MediaResource ;
-           dcterms:description """The actual physical representation of one or more MediaResource
-      edited for consumption. The â€œEssenceâ€� is a physical representation of a MediaResource in a
-      particular Format destined for play-out or publishing. \"Essence is a subclass of a
-      MediaResource and inherits the MediaResource properties. â€œEssenceâ€� can be available in a
-      form of a simple file or complex packages (e.g. as delivered by cameras of different
-      brands)."""@en ;
-           rdfs:label "Essence"@en .
+           dcterms:description "C'est une ressource multimédia, MediaResource,qui peut être composée d'une ou plusieurs Pistes, Tracks. Une ressource multimédia est définie par un objet éditorial d'un domaine éditorial, EditorialObject (Editorial Domain). Cet EditorialObject peut être matérialisé par des essences dans un ou plusieurs formats pour différents médias ou plateformes de diffusion."@fr ,
+                               "The actual physical representation of one or more MediaResource edited for consumption. The Essence is a physical representation of a MediaResource in a particular Format destined for play-out or publishing. \"Essence is a subclass of a MediaResource and inherits the MediaResource properties. Essence can be available in a form of a simple file or complex packages (e.g. as delivered by cameras of different brands)."@en ;
+           rdfs:label "Essence"@en ,
+                      "Essence"@fr .
 
 
 ###  http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Event
@@ -3728,13 +3725,12 @@ Une localisation est utilisée pour définir la couverture spatiale du reportage
 ###  http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource
 ec:MediaResource rdf:type owl:Class ;
                  rdfs:subClassOf ec:Resource ;
-                 dcterms:description """An audiovisual MediaResource, which can be composed of one or more
-      Tracks. A MediaResource is defined by an EditorialObject (Editorial Domain), which can be
-      realised in Essences in one or more Formats for different delivery medias or
-      platforms."""@en ,
+                 dcterms:description "An audiovisual MediaResource, which can be composed of one or more Tracks. A MediaResource is defined by an EditorialObject (Editorial Domain), which can be realised in Essences in one or more Formats for different delivery medias or platforms."@en ,
+                                     "C'est uen ressource médiatique, MediaResource, qui peut être composée d'une ou plusieurs pistes, Tracks. Une ressource médiatique est définie par un objet éditorial, EditorialObject dans un domaine éditorial, EditorialDomain.  L'objet éditorial peut être matérialisé dans des essences dans un ou plusieurs formats pour différents médias ou plateformes de diffusion."@fr ,
                                      "Eine audiovisuelle Medienressource, die aus einer oder mehreren Spuren bestehen kann. Die Medienressource ist durch einen Medieninhalt definiert und kann durch Essenzen in einem oder mehreren Formaten für verschiedene Medien oder Plattformen realisiert werden."@de ;
                  rdfs:label "Media resource"@en ,
-                            "Medienressource"@de .
+                            "Medienressource"@de ,
+                            "Resource médiatique"@fr .
 
 
 ###  http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Organisation
@@ -3764,8 +3760,10 @@ ec:PhysicalResource rdf:type owl:Class ;
                     rdfs:subClassOf ec:Resource ;
                     dcterms:description "Beschreibt eine physische Ressource, z.B. ein Tonband."@de ,
                                         "To describe a physical resource e.g. a tape."@en ;
+                    rdfs:comment "Pour décrire un ressource physique, par exemple une bande magnétique."@fr ;
                     rdfs:label "Physical resource"@en ,
-                               "Physische Ressource"@de .
+                               "Physische Ressource"@de ,
+                               "Ressource physique"@fr .
 
 
 ###  http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#PublicationChannel
@@ -3871,9 +3869,10 @@ ec:TimelineTrack rdf:type owl:Class ;
 ###  http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Track
 ec:Track rdf:type owl:Class ;
          rdfs:subClassOf ec:MediaResource ;
-         dcterms:description """E.g. audio, video, timcode and/or data Tracks forming the
-      MediaResource."""@en ;
-         rdfs:label "Track"@en .
+         dcterms:description "E.g. audio, video, timcode and/or data Tracks forming the MediaResource."@en ,
+                             "Par exemple, des pistes audio, vidéo, timecode et/ou données formant la MediaResource"@fr ;
+         rdfs:label "Piste"@fr ,
+                    "Track"@en .
 
 
 ###  http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#VideoFormat
