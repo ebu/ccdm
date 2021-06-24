@@ -88,40 +88,50 @@ xsd:time rdf:type rdfs:Datatype .
 ebuccdm:accountType rdf:type owl:ObjectProperty ;
                     rdfs:domain ebuccdm:Account ;
                     rdfs:range skos:Concept ;
-                    dcterms:description "A type of Account"@en ;
-                    rdfs:label "Account type"@en .
+                    dcterms:description "A type of Account"@en ,
+                                        "Un type de Compte."@fr ;
+                    rdfs:label "Account type"@en ,
+                               "Type de compte"@fr .
 
 
 ###  http://www.ebu.ch/metadata/ontologies/ebuccdm#accountingTo
 ebuccdm:accountingTo rdf:type owl:ObjectProperty ;
                      rdfs:domain ec:Service ;
                      rdfs:range ebuccdm:Account ;
-                     dcterms:description "A Consumer Account for a particular Service."@en ;
-                     rdfs:label "Account"@en .
+                     dcterms:description "A Consumer Account for a particular Service."@en ,
+                                         "Un Compte de Consommateur pour un Service particulier."@fr ;
+                     rdfs:label "Account"@en ,
+                                "Compte"@fr .
 
 
 ###  http://www.ebu.ch/metadata/ontologies/ebuccdm#assetValueType
 ebuccdm:assetValueType rdf:type owl:ObjectProperty ;
                        rdfs:domain ebuccdm:AssetValue ;
                        rdfs:range skos:Concept ;
-                       dcterms:description "To type the notion of value associated to an Asset."@en ;
-                       rdfs:label "Asset value type"@en .
+                       dcterms:description "Pour définir le type de la valeur associée à un actif."@fr ,
+                                           "To type the notion of value associated to an Asset."@en ;
+                       rdfs:label "Asset value type"@en ,
+                                  "Type de la valeur d'un actif"@fr .
 
 
 ###  http://www.ebu.ch/metadata/ontologies/ebuccdm#audienceType
 ebuccdm:audienceType rdf:type owl:ObjectProperty ;
                      rdfs:domain ebuccdm:Audience ;
                      rdfs:range skos:Concept ;
-                     dcterms:description "To specify a type of Audience."@en ;
-                     rdfs:label "Audience type"@en .
+                     dcterms:description "Permet de spécifier le type associé à une audience."@fr ,
+                                         "To specify a type of Audience."@en ;
+                     rdfs:label "Audience type"@en ,
+                                "Type d'audience"@fr .
 
 
 ###  http://www.ebu.ch/metadata/ontologies/ebuccdm#auditJobType
 ebuccdm:auditJobType rdf:type owl:ObjectProperty ;
                      rdfs:domain ebuccdm:AuditJob ;
                      rdfs:range skos:Concept ;
-                     dcterms:description "To define a type of AuditJob."@en ;
-                     rdfs:label "Audit job type"@en .
+                     dcterms:description "Permet de définir le type d'une tâche d'audit."@fr ,
+                                         "To define a type of AuditJob."@en ;
+                     rdfs:label "Audit job type"@en ,
+                                "Type d'une tâche d'audit"@fr .
 
 
 ###  http://www.ebu.ch/metadata/ontologies/ebuccdm#auditReportType
